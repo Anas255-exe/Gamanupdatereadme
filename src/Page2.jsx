@@ -9,8 +9,8 @@ export default function Page2() {
             <p className="SubContent" align="center">
                 At Gaman, we bring together three key groups to make travel planning a breeze. <br></br>Join us as a traveller, travel guru, partner agency and explore plan and share your travel <br></br> experiences.
             </p>
-            <br></br>
-            <br></br>
+            <br/>
+            
             <div className="Users">
                 <div className="Travellers" align="center">
                     <h2>Travellers: Explore, Plan, <br></br>Share, Inspire</h2>
@@ -25,9 +25,8 @@ export default function Page2() {
                     <p className="UsersContent">Connect with travellers directly by advertising your hotels, guides restraunts and more.</p>
                 </div>
             </div>
-            <div align="center">
-                <button className="JoinNowButton">Join Now</button>
-            </div>
+            <br/>
+            <br/>
         </div>
     )
 }

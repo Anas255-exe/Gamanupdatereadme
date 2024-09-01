@@ -1,0 +1,130 @@
+/* Footer container */
+.Footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  color: #333;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Content layout */
+.Footer-Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual footer sections */
+.Footer-Section {
+  flex: 1;
+  margin: 0 20px;
+  min-width: 200px;
+}
+
+.Footer-Section h3 {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+/* Footer links */
+.Footer-Section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Footer-Section li {
+  margin-bottom: 10px;
+}
+
+.Footer-Section a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Footer-Section a:hover {
+  color: #007bff;
+}
+
+/* Social media icons */
+.Social-Icons {
+  padding: 0;
+}
+
+.Social-Icons li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.Social-Icons a {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.Social-Icons a:hover {
+  color: #007bff;
+}
+
+/* Newsletter form */
+.Footer-Signup form {
+  margin-top: 15px;
+}
+
+.EmailInput {
+  padding: 10px;
+  width: 220px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.SubscribeButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.SubscribeButton:hover {
+  background-color: #0056b3;
+}
+
+/* Footer bottom section */
+.Footer-Bottom {
+  margin-top: 20px;
+}
+
+.Footer-Bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .Footer-Content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .Footer-Section {
+      margin: 20px 0;
+      text-align: center;
+  }
+
+  .EmailInput {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .SubscribeButton {
+      width: 100%;
+  }
+}

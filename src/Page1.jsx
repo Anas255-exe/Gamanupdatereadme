@@ -4,7 +4,7 @@ import Carousel from "./components/Carousel.jsx";
 const images = [
   "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
   "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg",
-  "https://upload.wikimedia.org/wikipedia/commons/a/a8/Pexels-photo-67028.jpg"
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYpR_mbwG8e2smECzOyo5PY39hkS4PTlCSXQ&s"
 ];
 
 export default function Page1() {

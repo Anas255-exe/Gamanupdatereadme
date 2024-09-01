@@ -5,11 +5,11 @@ body {
 
 .Navbar {
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
-  color: white;
+  background-color: #cd8686;
 }
 
 .Headings {
@@ -22,10 +22,13 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   margin-right: 20px;
+  color:white;
 }
 
 .HeadingButtons {
   margin: 0 10px;
+  font-size: 1em;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -54,5 +57,5 @@ body {
 
 .SignUpButton:hover {
   background-color: #0056b3;
-  font-size:0.9em;
+  font-size:1.1em;
 }

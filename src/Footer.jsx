@@ -1,11 +1,11 @@
-import './Footer.css';
+import './css/footer.css';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
         <footer className="Footer">
             <div className="Footer-Content">
-                <div className="Footer-Links">
+                <div className="Footer-Section">
                     <h3>Explore</h3>
                     <ul>
                         <li><Link to="/destinations">Destinations</Link></li>
@@ -15,7 +15,7 @@ export default function Footer() {
                         <li><Link to="/terms">Terms of Service</Link></li>
                     </ul>
                 </div>
-                <div className="Footer-Social">
+                <div className="Footer-Section">
                     <h3>Connect With Us</h3>
                     <ul className="Social-Icons">
                         <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
@@ -23,7 +23,7 @@ export default function Footer() {
                         <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                     </ul>
                 </div>
-                <div className="Footer-Signup">
+                <div className="Footer-Section Footer-Signup">
                     <h3>Join Our Newsletter</h3>
                     <p>Get the latest travel tips, guides, and exclusive deals directly to your inbox.</p>
                     <form>
