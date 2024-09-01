@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.Headings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.HeadingButtons {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.HeadingButtons:hover {
+  /* text-decoration: underline; */
+  font-size: 1.1em;
+}
+
+.AuthButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SignUpButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.SignUpButton:hover {
+  background-color: #0056b3;
+  font-size:0.9em;
+}

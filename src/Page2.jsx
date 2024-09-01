@@ -1,4 +1,5 @@
-import "./App.css"
+// import "./App.css"
+import "./css/page2.css"
 export default function Page2() {
     return (
         <div>
@@ -23,7 +24,6 @@ export default function Page2() {
                     <h2>Partner Agencies: Boost <br></br>Your Visibility</h2>
                     <p className="UsersContent">Connect with travellers directly by advertising your hotels, guides restraunts and more.</p>
                 </div>
-
             </div>
             <div align="center">
                 <button className="JoinNowButton">Join Now</button>
