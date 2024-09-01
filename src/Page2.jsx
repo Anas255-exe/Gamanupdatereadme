@@ -1,4 +1,4 @@
-// import "./App.css"
+import "./css/App.css"
 import "./css/page2.css"
 export default function Page2() {
     return (
@@ -12,7 +12,7 @@ export default function Page2() {
             <br/>
             
             <div className="Users">
-                <div className="Travellers" align="center">
+                <div className="Travellers" align="center" >
                     <h2>Travellers: Explore, Plan, <br></br>Share, Inspire</h2>
                     <p className="UsersContent">Discover detailed travel plans with fellow travellers.</p>
                 </div>

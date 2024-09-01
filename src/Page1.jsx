@@ -1,4 +1,4 @@
-import "./App.css";
+import "./css/App.css";
 import Carousel from "./components/Carousel.jsx";
 
 const images = [
@@ -15,10 +15,10 @@ export default function Page1() {
       </h1>
       <p className="SubContent" align="center">
         Welcome to Gaman, the ultimate travel planning hub where you can find{" "}
-        <br></br> inspiration, expert advice, and amazing travel deals. Start
+        <br/> inspiration, expert advice, and amazing travel deals. Start
         exploring now!
       </p>
-      <br />
+      <br/>
       <Carousel images={images} interval={5000} />
     </div>
   );

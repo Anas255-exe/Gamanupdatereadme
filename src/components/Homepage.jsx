@@ -1,9 +1,9 @@
-import Navbar from "./Navbar.jsx";
-import Footer from "./Footer.jsx";
-import Page1 from "./Page1.jsx";
-import Page2 from "./Page2.jsx";
-import Page3 from "./Page3.jsx";
-import './App.css';
+import Navbar from "../Navbar.jsx";
+import Footer from "../Footer.jsx";
+import Page1 from "../Page1.jsx";
+import Page2 from "../Page2.jsx";
+import Page3 from "../Page3.jsx";
+import './../css/App.css';
 
 function Homepage() {
   return (
