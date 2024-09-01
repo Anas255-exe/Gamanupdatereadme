@@ -1,5 +1,25 @@
+.Blogs{
+    display: flex;
+    gap:50px;
+    margin: 50px 50px;
+}
 .Blogs_Delhi{
     width:350px;
-    margin: 50px 50px;
+    
+    border-radius: 5px;
+}
+.Blogs_Jaipur{
+    width:350px;
+    height:200px;
+    border-radius: 5px;
+}
+.Blogs_Kashmir{
+    width:350px;
+    height:200px;
+    border-radius: 5px;
+}
+.Blogs_MadhyaPradesh{
+    width:350px;
+    height:200px;
     border-radius: 5px;
 }
