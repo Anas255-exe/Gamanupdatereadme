@@ -6,6 +6,39 @@ body {
 .Pages {
   padding: 20px;
 }
+.Headings{
+    margin-left: 20px;
+    display:flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.Name{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    width:150px;
+    height: 50px;
+}
+.HeadingButtons{
+    font-size: 1.5rem;
+    margin-top:10px;
+    color: black;
+    text-decoration: none;
+}
+.SignUpButton{
+    height: 40px;
+    width: 100px;
+    margin:5px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.SubHeading{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.SubContent{
+    font-size: 1.5rem;
+}
 
 .Page1, .Page2, .Page3 {
   margin-bottom: 40px;
