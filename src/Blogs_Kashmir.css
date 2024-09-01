@@ -1,0 +1,80 @@
+.Portion1{
+    background-color:#B9D9EB;
+}
+.Portion2{
+    background-color:#ADD8E6;
+    margin-top: -30px;
+}
+.Heading{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+}
+.ByAndDate{
+    display:flex;
+    gap:50px;
+    margin-top:-30px;
+    justify-content: center;
+}
+.Description{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Location{
+    margin-left: 480px;
+}
+.LocationDetails{
+    margin-left: 480px;
+    display: flex;
+    gap:100px;
+}
+.ImgRow1{
+    margin:50px 480px;
+    display:flex;
+    gap:40px;
+
+}
+.House_Boat{
+    width:400px;
+    height: 226px;
+    border-radius: 5px;
+}
+.Garden{
+    width:400px;
+    height: 226px;
+    border-radius: 5px;
+}
+.ImgRow2{
+    margin:50px 480px;
+    display:flex;
+    gap:40px;
+
+}
+.Valley{
+    width:400px;
+    height: 226px;
+    border-radius: 5px;
+}
+.Snow{
+    width:400px;
+    height: 226px;
+    border-radius: 5px;
+}
+
+.RatingAndCost{
+    display: flex;
+    gap:200px;
+    margin-left: 480px;
+}
+.StarRating{
+    margin-top: -30px;
+    width: 200px;
+}
+.Comments{
+    margin-left: 480px;
+}
+.InputComments{
+    width:400px;
+    height: 50px;
+}

@@ -5,7 +5,7 @@ export default function Navbar() {
         <div>
             <nav className='Navbar'>
                 <div className='Headings'>
-                    <Link to={"/"}><div className='Name'>Gaman</div></Link>
+                    <Link to={"/"}><div><img  className='Name' src="./gaman_logo.png"></img></div></Link>
                     <div className='HeadingButtons'>Explore More</div>
                     <div className='HeadingButtons'>Plan Now</div>
                     <div className='HeadingButtons'>Share Tips</div>
