@@ -1,0 +1,146 @@
+.Navbar{
+    display:flex;
+    justify-content: space-between;
+    background-color: #87CEFA;
+    height: 50px;
+}
+.Headings{
+    margin-left: 20px;
+    display:flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.Name{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+.HeadingButtons{
+    font-size: 1.5rem;
+    margin-top:10px;
+    color: black;
+    text-decoration: none;
+}
+.SignUpButton{
+    height: 40px;
+    width: 100px;
+    margin:5px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.SubHeading{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.SubContent{
+    font-size: 1.5rem;
+}
+
+.Pages{
+    margin-top:-30px;
+    background-color: #ADD8E6;
+}
+
+.States{
+    display: flex;
+    justify-content: center;
+    gap:50px; 
+}
+.Delhi{
+    background-image: url("https://media.istockphoto.com/id/898467608/photo/the-india-gate-in-delhi.jpg?s=612x612&w=0&k=20&c=gXUaUcAJf7TD8VZ1UvBfNGU0SNNzqg-xuIx_eXgL1OM=");
+    background-repeat: no-repeat;
+    width:300px;
+    height: 250px;
+    background-size: 300px 250px;
+    border-radius: 10px;
+}
+.Jaipur{
+    background-image: url("https://www.holidify.com/images/cmsuploads/compressed/h4_20170822181427.PNG");
+    background-repeat: no-repeat;
+    width:300px;
+    height: 250px;
+    background-size: 300px 250px;
+    border-radius: 10px;
+}
+.Kashmir{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Neeulm_Valley_AJK_%28Arang_Kel%29.jpg/640px-Neeulm_Valley_AJK_%28Arang_Kel%29.jpg");
+    background-repeat: no-repeat;
+    width:300px;
+    height: 250px;
+    background-size: 300px 250px;
+    border-radius: 10px;
+}
+.UttarPradesh{
+    background-image: url("https://www.holidify.com/images/bgImages/UTTAR-PRADESH.jpg");
+    background-repeat: no-repeat;
+    width:300px;
+    height: 250px;
+    background-size: 300px 250px;
+    border-radius: 10px;
+}
+.Manipur{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTptM7Q9Uohzv7wAvUtH88wn4P3RwKtSLAJ5w&s");
+    background-repeat: no-repeat;
+    width:300px;
+    height: 250px;
+    background-size: 300px 250px;
+    border-radius: 10px;
+}
+.Himachal{
+    background-image: url("https://static.toiimg.com/photo/93246451.cms");
+    background-repeat: no-repeat;
+    width:300px;
+    height: 250px;
+    background-size: 300px 250px;
+    border-radius: 10px;
+}
+.Kerala{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6nRwwajw-OQXSCcraP1eEM9JYEg_CrjniiQ&s");
+    background-repeat: no-repeat;
+    width:300px;
+    height: 250px;
+    background-size: 300px 250px;
+    border-radius: 10px;
+}
+.MadhyaPradesh{
+    background-image: url("https://www.tourmyindia.com/blog//wp-content/uploads/2021/08/Best-Places-to-Visit-in-Madhya-Pradesh.jpg");
+    background-repeat: no-repeat;
+    width:300px;
+    height: 250px;
+    background-size: 300px 250px;
+    border-radius: 10px;
+}
+
+.Users{
+    display: flex;
+    justify-content: center;
+    gap:30px
+}
+.Travellers{
+    background-color: #73C2FB;
+    border:1px solid black;
+    border-radius: 10px;
+    width:400px;
+}
+.TravelGurus{
+    background-color: #73C2FB;
+    border:1px solid black;
+    border-radius: 10px;
+    width:400px;
+}
+.PartnerAgencies{
+    background-color: #73C2FB;
+    border:1px solid black;
+    border-radius: 10px;
+    width:400px;
+}
+.UsersContent{
+    font-size:1.2rem;
+}
+.JoinNowButton{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 10px;
+}

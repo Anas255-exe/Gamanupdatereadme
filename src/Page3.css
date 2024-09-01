@@ -1,0 +1,35 @@
+.Content{
+    margin-left: 150px;
+}
+.Page3{
+    display: flex;
+    gap:80px;
+}
+.Page3Divs{
+    display: flex;
+    gap: 100px;
+}
+.SubHead{
+    font-size: 3rem;
+}
+.p{
+    font-size: 1.5rem;
+}
+.p1{
+    font-size: 1.5rem;
+}
+.p2{
+    font-size: 1.2rem;
+}
+.Page3Pic{
+    width:800px;
+    height: 400px;
+    border-radius: 5px;
+}
+.Div{
+    background-color:#73C2FB;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+}
