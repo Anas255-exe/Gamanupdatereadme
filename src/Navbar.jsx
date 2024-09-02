@@ -12,7 +12,7 @@ export default function Navbar() {
           <div className="HeadingButtons">Share Tips</div>
           <div className="HeadingButtons">Discover</div>
           <Link to="/blogs" className="HeadingButtons">Blogs</Link>
-          <div className="SOS">SOS</div>
+          <div className="HeadingButtons">SOS</div>
         </div>
         <div className="AuthButtons">
           <button className="SignUpButton">

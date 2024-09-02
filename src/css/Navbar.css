@@ -32,13 +32,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.SOS{
-  margin: 0 10px;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+
 
 .HeadingButtons:hover {
   /* text-decoration: underline; */
