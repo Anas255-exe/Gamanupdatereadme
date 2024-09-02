@@ -19,13 +19,20 @@ body {
 }
 
 .Name {
-  font-size: 1.5em;
-  font-weight: bold;
   margin-right: 20px;
   color:white;
+  width: 150px;
+  height: 70px;
 }
 
 .HeadingButtons {
+  margin: 0 10px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.SOS{
   margin: 0 10px;
   font-size: 1em;
   font-weight: bold;

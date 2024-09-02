@@ -1,6 +1,7 @@
 import "./../css/Blogs.css";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar.jsx";
+import Footer from "../Footer.jsx";
 export default function Blogs() {
   return (
     <div>
@@ -28,6 +29,7 @@ export default function Blogs() {
           ></img>
         </Link>
       </div>
+      <Footer />
     </div>
   );
 }

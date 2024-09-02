@@ -3,128 +3,100 @@
   background-color: #f8f9fa;
   padding: 40px 0;
   color: #333;
-  text-align: center;
   font-family: 'Arial', sans-serif;
+  display: flex;
+  padding:50px 100px;
+  justify-content: space-between;
+
 }
 
 /* Content layout */
-.Footer-Content {
+.Footer_Content {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 500px;
   padding: 20px;
   flex-wrap: wrap;
-}
 
-/* Individual footer sections */
-.Footer-Section {
-  flex: 1;
-  margin: 0 20px;
-  min-width: 200px;
 }
-
-.Footer-Section h3 {
-  margin-bottom: 15px;
-  color: #007bff;
+.Contact_Us{
+  max-width: 500px;
 }
-
-/* Footer links */
-.Footer-Section ul {
-  list-style-type: none;
-  padding: 0;
+.Connect_Buttons{
+  display: flex;
+  gap:20px;
 }
-
-.Footer-Section li {
-  margin-bottom: 10px;
+.Facebook_Button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 2px;
 }
-
-.Footer-Section a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.Facebook_Button_img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
-
-.Footer-Section a:hover {
-  color: #007bff;
+.Whatsapp_Button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 2px;
 }
-
-/* Social media icons */
-.Social-Icons {
-  padding: 0;
+.Whatsapp_Button_img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
-
-.Social-Icons li {
-  display: inline;
-  margin-right: 20px;
+.Twitter_Button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 2px;
 }
-
-.Social-Icons a {
-  font-size: 1.2rem;
-  color: #333;
+.Twitter_Button_img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  align-content: center;
 }
-
-.Social-Icons a:hover {
-  color: #007bff;
+.Phone_Logo{
+  width:40px;
+  height: 30px;
 }
-
-/* Newsletter form */
-.Footer-Signup form {
-  margin-top: 15px;
+.Mail_Logo{
+  width:40px;
+  height: 30px;
 }
-
-.EmailInput {
-  padding: 10px;
-  width: 220px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-right: 10px;
+.Location_Logo{
+  width:40px;
+  height: 30px;
 }
-
-.SubscribeButton {
-  padding: 10px 20px;
-  background-color: #007bff;
+.Subscription{
+  max-width: 500px;
+}
+.Email_input{
+  width:300px;
+  height:50px;
+  border-radius: 20px;
+}
+.Subscribe_Button{
+  width:300px;
+  height:50px;
+  border-radius: 20px;
+}
+.Footer_Bottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.Footer_Links{
+  display: flex;
+  justify-content: space-between;
+  gap:5px;
+}
+.Links{
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.SubscribeButton:hover {
-  background-color: #0056b3;
-}
-
-/* Footer bottom section */
-.Footer-Bottom {
-  margin-top: 20px;
-}
-
-.Footer-Bottom p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .Footer-Content {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .Footer-Section {
-      margin: 20px 0;
-      text-align: center;
-  }
-
-  .EmailInput {
-      width: 100%;
-      margin-bottom: 10px;
-  }
-
-  .SubscribeButton {
-      width: 100%;
-  }
 }
