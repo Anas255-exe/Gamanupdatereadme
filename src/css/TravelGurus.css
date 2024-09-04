@@ -1,0 +1,35 @@
+.Packages_h2{
+    font-size: 2rem;
+}
+.Packages_h1{
+    font-size: 3rem;
+}
+.Packages_p{
+    font-size: 1.5rem;
+}
+.Package_div1{
+    display: flex;
+    gap:60px;
+    background-color: azure;
+    width: 1326px;
+    margin-left: 300px;
+}
+.Package_divs_img{
+    width:400px
+}
+.starrating{
+    width:100px;
+}
+.div_part_2{
+    width:500px;
+}
+.div_part_3{
+    background-color: orange;
+}
+.div_part_3_line1{
+    display: flex;
+    gap:50px;
+}
+.book_now{
+    width:150px;
+}

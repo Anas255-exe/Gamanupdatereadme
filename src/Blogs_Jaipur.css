@@ -35,12 +35,11 @@
     gap:40px;
 
 }
-.Hawa_Mahal{
+.India_Gate{
     width:400px;
-    height: 226px;
     border-radius: 5px;
 }
-.Market{
+.Lotus_Temple{
     width:400px;
     height: 226px;
     border-radius: 5px;
@@ -51,17 +50,16 @@
     gap:40px;
 
 }
-.Fort1{
+.Jama_Masjid{
     width:400px;
     height: 226px;
     border-radius: 5px;
 }
-.Lake{
+.Red_Fort{
     width:400px;
     height: 226px;
     border-radius: 5px;
 }
-
 .RatingAndCost{
     display: flex;
     gap:200px;

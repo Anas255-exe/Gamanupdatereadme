@@ -9,7 +9,7 @@ export default function Navbar() {
           <Link to="/"><img className="Name"src="./gaman_logo.png"></img></Link>
           <div className="HeadingButtons">Explore More</div>
           <div className="HeadingButtons">Plan Now</div>
-          <div className="HeadingButtons">Share Tips</div>
+          <Link to="/travelgurus"><div className="HeadingButtons">Travel Gurus</div></Link>
           <div className="HeadingButtons">Discover</div>
           <Link to="/blogs" className="HeadingButtons">Blogs</Link>
           <div className="HeadingButtons">SOS</div>

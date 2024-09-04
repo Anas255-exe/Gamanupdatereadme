@@ -9,6 +9,7 @@ import Blogs_Kashmir from "./Blogs_Kashmir.jsx";
 import Blogs_MP from "./Blogs_MP.jsx";
 import Signup from "./components/signup.jsx";
 import Login from "./components/login.jsx";
+import TravelGurus from "./components/TravelGurus.jsx";
 export default function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/blogs_mp" element={<Blogs_MP />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/travelgurus" element={<TravelGurus />} />
       </Routes>
     </div>
   );
