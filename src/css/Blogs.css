@@ -1,25 +1,38 @@
-.Blogs{
+.Blogs {
     display: flex;
-    gap:50px;
+    flex-wrap: wrap;
+    gap: 50px;
     margin: 50px 50px;
+    justify-content: center;
 }
-.Blogs_Delhi{
-    width:350px;
-    
-    border-radius: 5px;
+
+.Blogs img {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
 }
-.Blogs_Jaipur{
-    width:350px;
-    height:200px;
-    border-radius: 5px;
+
+.Blogs img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-.Blogs_Kashmir{
-    width:350px;
-    height:200px;
-    border-radius: 5px;
+
+/* Add a slight dark overlay on hover to make the zoom effect pop */
+.Blogs img:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
-.Blogs_MadhyaPradesh{
-    width:350px;
-    height:200px;
-    border-radius: 5px;
+
+/* Additional hover effect for smoother appearance */
+.Blogs img:hover {
+    cursor: pointer;
 }
