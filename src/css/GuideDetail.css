@@ -1,0 +1,147 @@
+/* GuideDetail.css */
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-guide-div {
+    padding: 20px;
+  }
+  
+  .guide-detail-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .carousel-wrapper {
+    position: sticky;
+    top: 20px;
+    flex: 1;
+    max-width: 40%;
+    margin-right: 20px;
+    height: 100vh; /* Ensure it takes the full viewport height */
+    overflow: hidden;
+  }
+  
+  .guide-detail-page {
+    flex: 2;
+    max-height: 100vh;
+    overflow-y: auto; /* Scrollable content */
+  }
+  
+  .guide-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .guide-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .guide-title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .guide-meta {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #dcdcdc;
+  }
+  
+  .guide-body {
+    background-color: #f7f9fc;
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .guide-expertise, .guide-languages, .guide-rating-cost, .guide-reviews {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+  }
+  
+  .guide-rating, .guide-cost {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .guide-languages, .guide-expertise {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .guide-languages ul, .guide-expertise ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .guide-languages li, .guide-expertise li {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .review {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .review p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .review strong {
+    color: #007BFF;
+  }
+  
+  @media (max-width: 768px) {
+    .guide-detail-container {
+      flex-direction: column;
+    }
+  
+    .carousel-wrapper, .guide-detail-page {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .guide-title {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .guide-title {
+      font-size: 1.5rem;
+    }
+  }
+  

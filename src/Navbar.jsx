@@ -12,6 +12,7 @@ export default function Navbar() {
           <Link to="/travelgurus"><div className="HeadingButtons">Travel Gurus</div></Link>
           <div className="HeadingButtons">Discover</div>
           <Link to="/blogs" className="HeadingButtons">Blogs</Link>
+          <Link to="/guides">Guides</Link>
           <div className="HeadingButtons">SOS</div>
         </div>
         <div className="AuthButtons">

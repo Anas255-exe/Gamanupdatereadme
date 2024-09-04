@@ -8,7 +8,7 @@ export default function Blogs() {
       <Navbar />
       <div className="Blogs">
         <Link to={"/Blogs_Delhi"}>
-          <img className="Blogs_Delhi" src="./India_Gate.jpg"></img>
+          <img className="Blogs_Delhi" src="https://thumbs.dreamstime.com/b/india-gate-delhi-india-15161427.jpg"></img>
         </Link>
         <Link to={"/Blogs_Jaipur"}>
           <img

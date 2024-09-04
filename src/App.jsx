@@ -10,6 +10,8 @@ import Blogs_MP from "./Blogs_MP.jsx";
 import Signup from "./components/signup.jsx";
 import Login from "./components/login.jsx";
 import TravelGurus from "./components/TravelGurus.jsx";
+import Guides from "./components/ravelgurus.jsx";
+import GuideDetail from "./components/GuideDetail.jsx";
 export default function App() {
   return (
     <div>
@@ -24,6 +26,8 @@ export default function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/travelgurus" element={<TravelGurus />} />
+        <Route path="/guides" element={<Guides />} />
+        <Route path="/guidedetail" element={<GuideDetail />} />
       </Routes>
     </div>
   );
