@@ -36,8 +36,8 @@ export default function Blogs_Delhi() {
       {blogs.length > 0 ? (
         <ul>
           {blogs.map((blog) => (
-            <li key={blog.id}>
-              <Link to={`/blog/${blog.id}`}>
+            <li key={blog.title}> {/* Use title as key */}
+              <Link to={`/blog/${encodeURIComponent(blog.title)}`}>
                 <h2>{blog.title}</h2>
                 <p>{blog.description}</p>
               </Link>

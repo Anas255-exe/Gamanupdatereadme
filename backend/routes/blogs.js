@@ -3,10 +3,10 @@ import Blog from '../models/blog.js';
 
 const router = express.Router();
 
-// Search for blogs
+// Consolidated search route
 router.get('/search', async (req, res) => {
   try {
-    const { tags, authorName, minCost, maxCost, city } = req.query;
+    const { tags, authorName, minCost, maxCost, city, title } = req.query;
     const query = {};
 
     if (tags && typeof tags === 'string') {
@@ -18,6 +18,7 @@ router.get('/search', async (req, res) => {
     if (minCost) query.cost = { $gte: Number(minCost) };
     if (maxCost) query.cost = { ...query.cost, $lte: Number(maxCost) };
     if (city) query['location.city'] = new RegExp(city, 'i');
+    if (title) query.title = new RegExp(title, 'i');  // Title search included here
 
     const blogs = await Blog.find(query);
 
@@ -29,6 +30,23 @@ router.get('/search', async (req, res) => {
   } catch (error) {
     console.error('Error during blog search:', error);
     res.status(500).json({ message: 'Internal server error during search.' });
+  }
+});
+
+// Search by ID
+router.get('/:id', async (req, res) => {
+  try {
+    const blogId = req.params.id;
+    const blog = await Blog.findById(blogId);
+
+    if (!blog) {
+      return res.status(404).json({ message: 'Blog not found' });
+    }
+
+    res.status(200).json(blog);
+  } catch (error) {
+    console.error('Error fetching blog by ID:', error);
+    res.status(500).json({ message: 'Internal server error' });
   }
 });
 
