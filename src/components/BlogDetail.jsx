@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from './../Navbar.jsx';
+import './../css/BlogDetail.css'; // Import the CSS file
 
 export default function BlogDetail() {
-  const { title } = useParams(); // Get the blog title from the URL
+  const { title } = useParams(); 
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -16,11 +17,7 @@ export default function BlogDetail() {
           throw new Error('Failed to fetch blog data');
         }
         const data = await response.json();
-        if (Array.isArray(data) && data.length > 0) {
-          setBlog(data[0]); // Assume the first blog is the one we want
-        } else {
-          setBlog(data);
-        }
+        setBlog(data.length > 0 ? data[0] : null);
         setLoading(false);
       } catch (error) {
         setError(error.message);
@@ -35,56 +32,78 @@ export default function BlogDetail() {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div>
-      <Navbar />
+    <>
+    <Navbar />
+    <div className="blog-detail-page">
+      
       {blog ? (
-        <div>
-          <h1>{blog.title}</h1>
-          <div className="ByAndDate">
-            {blog.author ? <h2>By {blog.author.name} ({blog.author.email})</h2> : <h2>Author Unknown</h2>}
-            <h2>Blog Date: {new Date(blog.blogDate).toLocaleDateString()}</h2>
-            <h2>Travel Date: {new Date(blog.travelDate).toLocaleDateString()}</h2>
-          </div>
-          <p>{blog.description}</p>
+        <div className="blog-card">
+          <header className="blog-header">
+            <h1 className="blog-title">{blog.title}</h1>
+            <div className="blog-meta">
+              {blog.author ? (
+                <p className="author">By {blog.author.name} ({blog.author.email})</p>
+              ) : (
+                <p className="author">Author Unknown</p>
+              )}
+              <p className="date">Published on: {new Date(blog.blogDate).toLocaleDateString()}</p>
+              <p className="date">Travel Date: {new Date(blog.travelDate).toLocaleDateString()}</p>
+            </div>
+          </header>
 
-          <h3>Location</h3>
-          <p>Country: {blog.location.country}</p>
-          <p>City: {blog.location.city}</p>
-          <p>Coordinates: {blog.location.coordinates.latitude}, {blog.location.coordinates.longitude}</p>
+          <section className="blog-body">
+            <p className="blog-description">{blog.description}</p>
+          </section>
 
-          <h3>Images</h3>
-          {blog.images.map((image, index) => (
-            <img key={index} src={image} alt={`Blog image ${index + 1}`} style={{ width: '300px', margin: '10px' }} />
-          ))}
+          <section className="blog-location">
+            <h3 className="section-title">Location</h3>
+            <p>Country: {blog.location.country}</p>
+            <p>City: {blog.location.city}</p>
+            <p>Coordinates: {blog.location.coordinates.latitude}, {blog.location.coordinates.longitude}</p>
+          </section>
 
-          <h3>Rating</h3>
-          <p>{blog.rating} stars</p>
+          <section className="blog-images">
+            <h3 className="section-title">Gallery</h3>
+            <div className="image-grid">
+              {blog.images.map((image, index) => (
+                <img key={index} src={image} alt={`Blog image ${index + 1}`} className="blog-image" />
+              ))}
+            </div>
+          </section>
 
-          <h3>Cost</h3>
-          <p>${blog.cost}</p>
+          <section className="blog-rating-cost">
+            <h3 className="section-title">Rating & Cost</h3>
+            <p className="blog-rating">Rating: {blog.rating} stars</p>
+            <p className="blog-cost">Cost: ${blog.cost}</p>
+          </section>
 
-          <h3>Tags</h3>
-          <ul>
-            {blog.tags.map((tag, index) => (
-              <li key={index}>{tag}</li>
-            ))}
-          </ul>
+          <section className="blog-tags">
+            <h3 className="section-title">Tags</h3>
+            <ul className="tags-list">
+              {blog.tags.map((tag, index) => (
+                <li key={index} className="tag">{tag}</li>
+              ))}
+            </ul>
+          </section>
 
-          <h3>Comments</h3>
-          {blog.comments.length > 0 ? (
-            blog.comments.map((comment) => (
-              <div key={comment._id.$oid}>
-                <p><strong>{comment.username}</strong> on {new Date(comment.date.$date).toLocaleDateString()}</p>
-                <p>{comment.text}</p>
-              </div>
-            ))
-          ) : (
-            <p>No comments yet.</p>
-          )}
+          <section className="blog-comments">
+            <h3 className="section-title">Comments</h3>
+            {blog.comments.length > 0 ? (
+              blog.comments.map((comment) => (
+                <div key={comment._id.$oid} className="comment">
+                  <p><strong>{comment.username}</strong> on {new Date(comment.date.$date).toLocaleDateString()}</p>
+                  <p>{comment.text}</p>
+                </div>
+              ))
+            ) : (
+              <p>No comments yet.</p>
+            )}
+          </section>
         </div>
       ) : (
         <p>No blog found for the specified title.</p>
       )}
     </div>
+    </>
   );
 }

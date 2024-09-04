@@ -21,17 +21,20 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 2rem;
+  width:50px;
   border: none;
-  padding: 10px;
+  padding: 10px 15px; /* Adjusted padding for a smaller button size */
   cursor: pointer;
+  z-index: 10; /* Ensure buttons are above other elements */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .prev {
-  left: 0;
+  left: 10px; /* Position the previous button on the left */
 }
 
 .next {
-  right: 0;
+  right: 10px; /* Position the next button on the right */
 }
 
 .carousel-btn:hover {
@@ -43,6 +46,7 @@
   position: absolute;
   bottom: 10px;
   width: 100%;
+  z-index: 10; /* Ensure dots are above other elements */
 }
 
 .dot {
