@@ -38,12 +38,14 @@ const destinations = [
 
 const TravelSlider = () => {
   const [items, setItems] = useState(destinations);
+  const [key, setKey] = useState(0); // Add this state
 
   const nextSlide = () => {
     const newItems = [...items];
     const firstItem = newItems.shift();
     newItems.push(firstItem);
     setItems(newItems);
+    setKey(prevKey => prevKey + 1); // Update key
   };
 
   const prevSlide = () => {
@@ -51,39 +53,39 @@ const TravelSlider = () => {
     const lastItem = newItems.pop();
     newItems.unshift(lastItem);
     setItems(newItems);
+    setKey(prevKey => prevKey + 1); // Update key
   };
 
   return (
     <>
-    <Navbar/>
-    <div className="container">
-      <div className="slide">
-        {items.map((item, index) => (
-          <div
-            className={`item item-${index + 1}`}
-            style={{ backgroundImage: `url(${item.image})` }}
-            key={index}
-          >
-            <div className="content">
-              <div className="name">{item.name}</div>
-              <div className="des">{item.description}</div>
-              <button>See More</button>
+      <Navbar/>
+      <div className="container">
+        <div className="slide" key={key}> {/* Add key here */}
+          {items.map((item, index) => (
+            <div
+              className={`item item-${index + 1}`}
+              style={{ backgroundImage: `url(${item.image})` }}
+              key={index}
+            >
+              <div className="content">
+                <div className="name">{item.name}</div>
+                <div className="des">{item.description}</div>
+                <button className='see-more-button'>See More</button>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <div className="button">
-        <button className="prev" onClick={prevSlide}>
-          <i className="fa-solid fa-arrow-left"></i>
-        </button>
-        <button className="next" onClick={nextSlide}>
-          <i className="fa-solid fa-arrow-right"></i>
-        </button>
+        <div className="button">
+          <button className="prev" onClick={prevSlide}>
+            <i className="fa-solid fa-arrow-left"></i>
+          </button>
+          <button className="next" onClick={nextSlide}>
+            <i className="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        {/* <Footer/> */}
       </div>
-      {/* <Footer/> */}
-    </div>
-    
     </>
   );
 };

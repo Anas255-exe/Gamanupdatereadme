@@ -1,13 +1,4 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    background: #eaeaea;
-    overflow: hidden;
-} */
 
 .container {
     position: absolute;
@@ -18,6 +9,14 @@ body {
     height: 800px;
     background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
+}
+.see-more-button{
+    width:150px;
+    background-color: #ababab;
+    border:1px solid #ababab;
+    height: 60px;
+    border-radius: 2px;
+    font-size: 20px;
 }
 
 .container .slide .item {
@@ -45,20 +44,21 @@ body {
 }
 
 .slide .item:nth-child(3) {
-    left: 50%;
+    left: 70%;
 }
 
 .slide .item:nth-child(4) {
-    left: calc(50% + 260px);
+    left: calc(70% + 350px);
 }
 
-.slide .item:nth-child(5) {
-    left: calc(50% + 520px);
+.slide .item:nth-child(n+5) {
+    left: calc(50% + 540px);
+    opacity:0;
 }
 
 /* For the 6th item onward */
 .slide .item:nth-child(n + 6) {
-    left: calc(50% + 660px);
+    left: calc(50% + 70px);
     opacity: 0;
 }
 
@@ -66,12 +66,14 @@ body {
     position: absolute;
     top: 50%;
     left: 100px;
-    width: 300px;
+    width: 500px;
     text-align: left;
+    font-size: 30px;
     color: #eee;
     transform: translate(0, -50%);
     font-family: system-ui;
     display: none;
+    /* animation: animate 1s ease-in-out 1 forwards; */
 }
 
 .slide .item:nth-child(2) .content {
@@ -98,7 +100,7 @@ body {
     border: none;
     cursor: pointer;
     opacity: 0;
-    animation: animate 1s ease-in-out 0.6s 1 forwards;
+    animation: animate 2s ease-in-out 0.6s 1 forwards;
 }
 
 .content button:hover {
@@ -109,7 +111,7 @@ body {
 @keyframes animate {
     from {
         opacity: 0;
-        transform: translate(0, 100px);
+        transform: translate(0, 200px);
         filter: blur(33px);
     }
     to {
