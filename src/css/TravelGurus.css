@@ -21,20 +21,20 @@
 .Gurus_divs_img{
     width:400px
 }
-.starrating{
+.Gurus_starrating{
     width:100px;
 }
-.div_part_2{
+.Gurus_div_part_2{
     width:500px;
 }
-.div_part_3{
-    background-color: orange;
+.Gurus_div_part_3{
+    background-color: rgb(244, 224, 188);
 }
-.div_part_3_line1{
+.Gurus_div_part_3_line1{
     display: flex;
     gap:50px;
 }
-.book_now{
+.Gurus_book_now{
     width:150px;
 }
 .Gurus_Heading{
