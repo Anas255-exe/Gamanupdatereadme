@@ -14,8 +14,21 @@
     width: 1326px;
     margin-left: 300px;
 }
-.Package_divs_img{
-    width:400px
+.Place_Description{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+.Package_divs_img1{
+    width:400px;
+    height:300px;
+}
+.Package_divs_img2{
+    width:400px;
+    height:350px;
+}
+.Package_divs_img3{
+    width:400px;
+    height:350px;
 }
 .starrating{
     width:100px;
@@ -24,7 +37,7 @@
     width:500px;
 }
 .div_part_3{
-    background-color: orange;
+    background-color: aliceblue;
 }
 .div_part_3_line1{
     display: flex;

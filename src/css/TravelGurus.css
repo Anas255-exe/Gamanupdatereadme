@@ -1,35 +1,48 @@
-.Packages_h2{
+.Gurus_h2{
     font-size: 2rem;
 }
-.Packages_h1{
+.Gurus_h1{
     font-size: 3rem;
 }
-.Packages_p{
+.Gurus_p{
+    display: flex;
+    justify-content: center;
     font-size: 1.5rem;
+    width:800px;
+    margin-left:550px;
 }
-.Package_div1{
+.Gurus_div1{
     display: flex;
     gap:60px;
     background-color: azure;
     width: 1326px;
     margin-left: 300px;
 }
-.Package_divs_img{
+.Gurus_divs_img{
     width:400px
 }
-.starrating{
+.Gurus_starrating{
     width:100px;
 }
-.div_part_2{
+.Gurus_div_part_2{
     width:500px;
 }
-.div_part_3{
-    background-color: orange;
+.Gurus_div_part_3{
+    background-color: rgb(244, 224, 188);
 }
-.div_part_3_line1{
+.Gurus_div_part_3_line1{
     display: flex;
     gap:50px;
 }
-.book_now{
+.Gurus_book_now{
     width:150px;
+}
+.Gurus_Heading{
+    font-size: 2.5rem;
+}
+.Gurus_Subhead{
+    font-size: 2rem;
+}
+.Gurus_Description{
+    font-size:1.5rem;
 }
