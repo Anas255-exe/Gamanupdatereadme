@@ -14,7 +14,7 @@
 .Gurus_div1{
     display: flex;
     gap:60px;
-    background-color: azure;
+    background-color: #f5f5dc;
     width: 1326px;
     margin-left: 300px;
 }
@@ -28,7 +28,7 @@
     width:500px;
 }
 .Gurus_div_part_3{
-    background-color: rgb(244, 224, 188);
+    background-color: #f9a755;
 }
 .Gurus_div_part_3_line1{
     display: flex;
@@ -36,6 +36,10 @@
 }
 .Gurus_book_now{
     width:150px;
+    background-color: rgb(74, 67, 53);
+}
+.Gurus_book_now:hover{
+    background-color: rgb(40, 37, 31);
 }
 .Gurus_Heading{
     font-size: 2.5rem;

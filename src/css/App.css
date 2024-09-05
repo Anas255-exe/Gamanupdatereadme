@@ -6,6 +6,10 @@ body {
 .Pages {
   padding: 20px;
 }
+.Page1{
+  background-color: #F5F5DC;
+  margin-top:-10px;
+}
 .Headings{
     margin-left: 20px;
     display:flex;
@@ -39,9 +43,7 @@ body {
 .Page1, .Page2, .Page3 {
   margin-bottom: 40px;
 }
-.Page1{
-  background-color: azure;
-}
+
 
 .SubHeading {
   font-size: 2.5em;

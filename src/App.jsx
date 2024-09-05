@@ -13,6 +13,7 @@ import TravelGurus from "./components/TravelGurus.jsx";
 import Guides from "./components/ravelgurus.jsx";
 import GuideDetail from "./components/GuideDetail.jsx";
 import TravelSlider from "./components/TravelSlider.jsx";
+import Chatbot from "./components/Chatbot.jsx";
 export default function App() {
   return (
     <div>
@@ -27,9 +28,8 @@ export default function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/travelgurus" element={<TravelGurus />} />
-        <Route path="/guides" element={<Guides />} />
-        <Route path="/guidedetail" element={<GuideDetail />} />
         <Route path="/travelslider" element={<TravelSlider />} />
+        <Route path="/chatbot" element={<Chatbot />} />
       </Routes>
     </div>
   );

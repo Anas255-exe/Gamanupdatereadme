@@ -2,37 +2,37 @@
 import React, { useState } from 'react';
 import './../css/TravelSlider.css';
 import Navbar from './../Navbar.jsx';
-import Footer from '../Footer.jsx';
+// import Footer from '../Footer.jsx';
 const destinations = [
   {
-    name: 'Switzerland',
-    image: 'https://i.ibb.co/qCkd9jS/img1.jpg',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+    name: 'Rajasthan',
+    image: 'https://images.pexels.com/photos/1588032/pexels-photo-1588032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    description: 'Rajasthan, known as the "Land of Kings," is a vibrant and culturally rich state in northern India. It is renowned for its majestic forts, palaces, colorful festivals, and warm hospitality.',
   },
   {
-    name: 'Finland',
-    image: 'https://i.ibb.co/jrRb11q/img2.jpg',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+    name: 'Kerala',
+    image: 'https://images.pexels.com/photos/19743480/pexels-photo-19743480/free-photo-of-the-backwaters-of-kerala-refer-to-a-network-of-interconnected-lakes-rivers-canals-and-lagoons-that-run-parallel-to-the-arabian-sea-coast.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    description: 'Kerala is one of the prominent tourist destinations of India, with coconut-lined sandy beaches, backwaters, hill stations, Ayurvedic tourism and tropical greenery as its major attractions.',
   },
   {
-    name: 'Iceland',
-    image: 'https://i.ibb.co/NSwVv8D/img3.jpg',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+    name: 'Andaman',
+    image: 'https://images.pexels.com/photos/2403207/pexels-photo-2403207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    description: 'A paradise for birds: Andaman is known as the paradise of birds, with 270 species of birds, including migratory and endemic birds.',
   },
   {
-    name: 'Australia',
-    image: 'https://i.ibb.co/Bq4Q0M8/img4.jpg',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+    name: 'Gujarat',
+    image: 'https://images.pexels.com/photos/25809063/pexels-photo-25809063/free-photo-of-vivekananda-rock-memorial.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    description: 'The state of Gujarat boasts a vibrant art, architecture, culture, and heritage; all of which is quite evident in the day-to-day lives of the locals.',
   },
   {
-    name: 'Netherlands',
-    image: 'https://i.ibb.co/jTQfmTq/img5.jpg',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+    name: 'Hyderabad',
+    image: 'https://images.pexels.com/photos/20380691/pexels-photo-20380691/free-photo-of-eureka-fort-statue-in-ramoji-film-city-in-hyderabad-india.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    description: 'It is a historic city noted for its many monuments, temples, mosques and bazaars. A multitude of influences have shaped the character of the city in the last 400 years.',
   },
   {
-    name: 'Ireland',
-    image: 'https://i.ibb.co/RNkk6L0/img6.jpg',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+    name: 'Bihar',
+    image: 'https://images.pexels.com/photos/6307227/pexels-photo-6307227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    description: 'Bihar is a place full of history and spiritual significance. Located in the eastern part of India, this state is known as the land of monasteries.',
   },
 ];
 

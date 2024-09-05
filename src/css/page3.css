@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 40px;
-  background-color: #f0f8ff;
+  background-color: #F5F5DC;
 }
 
 .Content {
@@ -30,7 +30,7 @@
 }
 
 .Card {
-  background-color: #73c2fb;
+  background-color: #f9a755;
   padding: 20px;
   border-radius: 10px;
   width: 300px;

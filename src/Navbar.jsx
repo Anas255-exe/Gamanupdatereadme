@@ -12,15 +12,15 @@ export default function Navbar() {
           <Link to="/travelgurus" className="HeadingButtons"><div className="HeadingButtons">Travel Gurus</div></Link>
           <div className="HeadingButtons">Discover</div>
           <Link to="/blogs" className="HeadingButtons">Blogs</Link>
-          <Link to="/guides"className="HeadingButtons">Guides</Link>
+          <Link to="/chatbot" className="HeadingButtons">ChatBot</Link>
           <div className="HeadingButtons">SOS</div>
         </div>
         <div className="AuthButtons">
           <button className="SignUpButton">
-            <Link to="/login">Login</Link>
+            <Link to="/login" className="SignUpButton_text">Login</Link>
           </button>
           <button className="SignUpButton">
-            <Link to="/signup">SignUp</Link>
+            <Link to="/signup" className="SignUpButton_text">SignUp</Link>
           </button>
         </div>
       </nav>
