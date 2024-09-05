@@ -1,6 +1,6 @@
 import "./css/App.css";
 import Carousel from "./components/Carousel.jsx";
-
+// import TravelSlider from "./components/TravelSlider.jsx";
 const images = [
   "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
   "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg",
@@ -20,6 +20,8 @@ export default function Page1() {
       </p>
       <br/>
       <Carousel images={images} interval={5000} />
+ 
+
     </div>
   );
 }
