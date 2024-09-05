@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,22 +7,22 @@
 body {
     background: #eaeaea;
     overflow: hidden;
-}
+} */
 
 .container {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 600px;
+    width: 1500px;
+    height: 800px;
     background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
 }
 
 .container .slide .item {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 450px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -49,11 +49,11 @@ body {
 }
 
 .slide .item:nth-child(4) {
-    left: calc(50% + 220px);
+    left: calc(50% + 260px);
 }
 
 .slide .item:nth-child(5) {
-    left: calc(50% + 440px);
+    left: calc(50% + 520px);
 }
 
 /* For the 6th item onward */

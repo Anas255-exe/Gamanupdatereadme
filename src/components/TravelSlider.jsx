@@ -1,7 +1,8 @@
 // TravelSlider.js
 import React, { useState } from 'react';
 import './../css/TravelSlider.css';
-
+import Navbar from './../Navbar.jsx';
+import Footer from '../Footer.jsx';
 const destinations = [
   {
     name: 'Switzerland',
@@ -53,6 +54,8 @@ const TravelSlider = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="container">
       <div className="slide">
         {items.map((item, index) => (
@@ -78,7 +81,10 @@ const TravelSlider = () => {
           <i className="fa-solid fa-arrow-right"></i>
         </button>
       </div>
+      {/* <Footer/> */}
     </div>
+    
+    </>
   );
 };
 
